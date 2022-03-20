@@ -21,6 +21,10 @@ while True:
     try:
         main(word)
         word = input('Enter next word: ')
+    except KeyboardInterrupt:
+        break
     except Exception as e:
-        # print(f"ERROR: {str(e)}")
+        print(f"ERROR: {str(e)}")
         input('Some error occoured.')
+
+input('\nPress ENTER to exit')

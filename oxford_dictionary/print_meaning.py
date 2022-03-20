@@ -1,14 +1,16 @@
 def print_meaning(word, senses):
     x = '='*(50+len(word))
-    print(x)
-    print(f"========================={word.upper()}=========================")
-    print(x)
+    y = '-'*(50+len(word))
+    print(y)
+    print(f"------------------------ {word.upper()} ------------------------")
+    print(y)
     for sense in senses:
         definitions = sense.get('definitions')
         examples = sense.get('examples')
-        print('Definitions:')
-        for index, definition in enumerate(definitions):
-            print(f"{index+1}. {definition}")
+        if definitions:
+            print('Definitions:')
+            for index, definition in enumerate(definitions):
+                print(f"{index+1}. {definition}")
 
         if examples:
             print('Examples:')
