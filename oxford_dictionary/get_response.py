@@ -7,6 +7,8 @@ language = "en-gb"
 def meaning(word_id):
     url = "https://od-api.oxforddictionaries.com:443/api/v2/entries/" + language + "/" + word_id.lower()
     r = requests.get(url, headers={"app_id": app_id, "app_key": app_key})
+    with open(f"{word_id}.json", 'w', encoding='utf8') as f:
+        f.write(str(r.text))
     return r 
 
 if __name__=="__main__":
