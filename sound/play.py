@@ -1,8 +1,11 @@
 from playsound import playsound 
 
 def play(track_url):
-    playsound(track_url)
-    print('Playing the sound.')
+    try:
+        playsound(track_url)
+        print('Playing the sound.')
+    except:
+        print('Some error occoured during playing the pronounciaiton.')
 
 
 if __name__=="__main__":
