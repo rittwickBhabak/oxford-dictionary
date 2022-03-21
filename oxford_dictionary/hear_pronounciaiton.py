@@ -5,7 +5,7 @@ def hear_pronounciation(senses):
     for sense in senses:
         track_url = sense.get('track_url')
         if track_url:
-            track_urls.add(track_url)
+            track_urls.add(track_url.strip())
     next_step = input('Hear the pronunciation 1\nEnter next word 2\n')
     try:
         next_step = int(next_step)
