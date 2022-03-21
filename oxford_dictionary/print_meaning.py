@@ -1,3 +1,5 @@
+from termcolor import cprint
+
 def print_meaning(word, senses):
     x = '='*(50+len(word))
     y = '-'*(50+len(word))
@@ -9,18 +11,18 @@ def print_meaning(word, senses):
         examples = sense.get('examples')
         synonyms = sense.get('synonyms')
         if definitions:
-            print('Definitions:')
+            cprint('Definitions:', 'yellow')
             for index, definition in enumerate(definitions):
                 print(f"{index+1}. {definition}")
         
         if synonyms:
-            print('Synonyms:')
+            cprint('Synonyms:', 'yellow')
             for synonym in synonyms:
                 print(synonym.get('text'), end=', ')
             print()
 
         if examples:
-            print('Examples:')
+            cprint('Examples:', 'yellow')
             for index, example in enumerate(examples):
                 print(f"{index+1}. {example['text']}")
         print(x)
