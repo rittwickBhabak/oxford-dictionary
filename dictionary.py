@@ -1,3 +1,4 @@
+from multiprocessing.connection import wait
 from oxford_dictionary.get_response import meaning
 from oxford_dictionary.get_senses import get_senses
 from oxford_dictionary.print_meaning import print_meaning 
@@ -5,7 +6,15 @@ from oxford_dictionary.hear_pronounciaiton import hear_pronounciation
 from oxford_dictionary.get_phrases_and_phrasal_verbs import get_phrasal_verbs, get_phrases
 from oxford_dictionary.print_phrasal_verbs import print_phrasal_verbs
 from oxford_dictionary.print_phrases import print_phrases
-import sys
+import sys, time 
+
+def close_dictionary():
+    wait_time = 5
+    print()
+    while wait_time>0:
+        time.sleep(1)
+        wait_time = wait_time - 1
+        print(f"Closing the dictionary in {wait_time} seconds")
 
 def main(word):
     response = meaning(word)
@@ -36,4 +45,5 @@ while True:
         print(f"ERROR: {str(e)}")
         input('Some error occoured.')
 
-input('\nPress ENTER to exit')
+close_dictionary() 
+# input('\nPress ENTER to exit')

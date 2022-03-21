@@ -4,7 +4,7 @@ import json
 def get_senses(response):
     all_senses = []
     
-    results = json.loads(response.text).get('results')
+    results = response.get('results')
     if results:
         for result in results:
             lexicalEntries = result.get('lexicalEntries')

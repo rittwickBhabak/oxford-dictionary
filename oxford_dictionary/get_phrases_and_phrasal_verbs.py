@@ -3,7 +3,7 @@ import json
 def parse(response):
     all_phrasalVerbs = set()
     all_phrases = set()
-    results = json.loads(response.text).get('results')
+    results = response.get('results')
     if results:
         for result in results:
             lexicalEntries = result.get('lexicalEntries')
