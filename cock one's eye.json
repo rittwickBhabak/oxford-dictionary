@@ -1,0 +1,53 @@
+{
+    "id": "cock_one%27s_eye",
+    "metadata": {
+        "operation": "retrieve",
+        "provider": "Oxford University Press",
+        "schema": "RetrieveEntry"
+    },
+    "results": [
+        {
+            "id": "cock_one%27s_eye",
+            "language": "en-gb",
+            "lexicalEntries": [
+                {
+                    "derivativeOf": [
+                        {
+                            "id": "cock",
+                            "text": "cock"
+                        }
+                    ],
+                    "entries": [
+                        {
+                            "senses": [
+                                {
+                                    "definitions": [
+                                        "glance in a quizzical or knowing manner with a raised eyebrow"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "he cocked an eye speculatively over the rim of his glass"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0195270.044",
+                                    "shortDefinitions": [
+                                        "glance in quizzical or knowing manner with raised eyebrow"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en-gb",
+                    "lexicalCategory": {
+                        "id": "idiomatic",
+                        "text": "Idiomatic"
+                    },
+                    "text": "cock one's eye"
+                }
+            ],
+            "type": "phrase",
+            "word": "cock one's eye"
+        }
+    ],
+    "word": "cock one's eye"
+}

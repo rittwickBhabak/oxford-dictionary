@@ -1,0 +1,58 @@
+{
+    "id": "at_full_cock",
+    "metadata": {
+        "operation": "retrieve",
+        "provider": "Oxford University Press",
+        "schema": "RetrieveEntry"
+    },
+    "results": [
+        {
+            "id": "at_full_cock",
+            "language": "en-gb",
+            "lexicalEntries": [
+                {
+                    "derivativeOf": [
+                        {
+                            "id": "cock",
+                            "text": "cock"
+                        }
+                    ],
+                    "entries": [
+                        {
+                            "senses": [
+                                {
+                                    "constructions": [
+                                        {
+                                            "text": "at full cock"
+                                        }
+                                    ],
+                                    "definitions": [
+                                        "(of a gun) with the cock lifted to the position at which the trigger will act"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "he wore a leather holster, the automatic slung at full cock butt-forward"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0195270.039",
+                                    "shortDefinitions": [
+                                        "with cock lifted to position at which trigger will act"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en-gb",
+                    "lexicalCategory": {
+                        "id": "idiomatic",
+                        "text": "Idiomatic"
+                    },
+                    "text": "at full cock"
+                }
+            ],
+            "type": "phrase",
+            "word": "at full cock"
+        }
+    ],
+    "word": "at full cock"
+}

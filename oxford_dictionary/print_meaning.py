@@ -7,10 +7,17 @@ def print_meaning(word, senses):
     for sense in senses:
         definitions = sense.get('definitions')
         examples = sense.get('examples')
+        synonyms = sense.get('synonyms')
         if definitions:
             print('Definitions:')
             for index, definition in enumerate(definitions):
                 print(f"{index+1}. {definition}")
+        
+        if synonyms:
+            print('Synonyms:')
+            for synonym in synonyms:
+                print(synonym.get('text'), end=', ')
+            print()
 
         if examples:
             print('Examples:')

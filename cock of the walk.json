@@ -1,0 +1,58 @@
+{
+    "id": "cock_of_the_walk",
+    "metadata": {
+        "operation": "retrieve",
+        "provider": "Oxford University Press",
+        "schema": "RetrieveEntry"
+    },
+    "results": [
+        {
+            "id": "cock_of_the_walk",
+            "language": "en-gb",
+            "lexicalEntries": [
+                {
+                    "derivativeOf": [
+                        {
+                            "id": "cock",
+                            "text": "cock"
+                        }
+                    ],
+                    "entries": [
+                        {
+                            "senses": [
+                                {
+                                    "constructions": [
+                                        {
+                                            "text": "cock of the walk"
+                                        }
+                                    ],
+                                    "definitions": [
+                                        "someone who dominates others within a group"
+                                    ],
+                                    "examples": [
+                                        {
+                                            "text": "don't ever forget he's cock of the walk here"
+                                        }
+                                    ],
+                                    "id": "m_en_gbus0195270.046",
+                                    "shortDefinitions": [
+                                        "someone who dominates others within group"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "language": "en-gb",
+                    "lexicalCategory": {
+                        "id": "idiomatic",
+                        "text": "Idiomatic"
+                    },
+                    "text": "cock of the walk"
+                }
+            ],
+            "type": "phrase",
+            "word": "cock of the walk"
+        }
+    ],
+    "word": "cock of the walk"
+}
