@@ -1,4 +1,6 @@
 from termcolor import cprint
+import colorama
+colorama.init()
 
 def print_phrasal_verbs(word, verbs):
     x = '='*(50+len(word))

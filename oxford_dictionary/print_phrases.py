@@ -1,4 +1,7 @@
 from termcolor import cprint
+import colorama
+colorama.init()
+
 
 def print_phrases(word, phrases):
     x = '='*(50+len(word))

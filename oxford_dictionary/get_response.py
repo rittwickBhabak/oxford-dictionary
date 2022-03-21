@@ -20,6 +20,7 @@ def new_request(word_id):
     return json.loads(r.text)
 
 def meaning(word_id):
+    word_id = word_id.lower()
     if(os.path.exists(os.path.join('cache', f"{word_id}.json"))):
         try:
             with open(os.path.join('cache', f"{word_id}.json"), 'r', encoding='utf8') as f:
